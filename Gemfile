@@ -54,3 +54,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "annotate", "~> 3.2"
+
+gem "bootstrap", "~> 5.2"
+
+gem "erb-formatter", "~> 0.3.0"
