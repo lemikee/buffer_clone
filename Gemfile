@@ -60,3 +60,5 @@ gem "annotate", "~> 3.2"
 gem "bootstrap", "~> 5.2"
 
 gem "erb-formatter", "~> 0.3.0"
+
+gem "bcrypt", "~> 3.1"
