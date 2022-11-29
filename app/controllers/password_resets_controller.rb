@@ -6,7 +6,7 @@ class PasswordResetsController < ApplicationController
     @user = User.find_by(email: params[:email])
 
     if @user.present?
-      # Send email
+
       PasswordMailer.with(user: @user).reset.deliver_now
     end
 

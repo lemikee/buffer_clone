@@ -3,13 +3,15 @@
 # Table name: users
 #
 #  id              :integer          not null, primary key
-#  email           :string
+#  email           :string           not null
 #  password_digest :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
 class User < ApplicationRecord
+  has_many :twitter_accounts
+
   has_secure_password
-  validates_presence_of :email, on: :create, message: "can't be blank"
-  # validates_exclusion_of :email, :in => %w( mov avi ), message: 'must be potato'
+
+  validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/, message: "must be a valid email address" }
 end

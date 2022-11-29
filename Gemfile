@@ -62,3 +62,9 @@ gem "bootstrap", "~> 5.2"
 gem "erb-formatter", "~> 0.3.0"
 
 gem "bcrypt", "~> 3.1"
+
+
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+
+
+gem "omniauth-twitter", "~> 1.4"
